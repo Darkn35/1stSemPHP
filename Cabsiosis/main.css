@@ -1,0 +1,131 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+body {
+    background-color: #030303;
+}
+#here {
+    z-index: 3;
+    position: absolute;
+}
+canvas {
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+img {
+    height: 45vh;
+    width: 45vh;
+    border-radius: 20px;
+    opacity: 0;
+}
+#textContent {
+    background-color: #030303;
+    position: absolute;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+#sceneBG {
+    background-color: #030303;
+    opacity: 1;
+    position: absolute;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+#titles {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word;
+    text-align: center;
+}
+#descLeft {
+    display: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    word-wrap: break-word;
+    text-align: center;
+    border: white 1px solid;
+    border-radius: 20px;
+    padding: 20px;
+}
+#descRight {
+    display: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    word-wrap: break-word;
+    text-align: center;
+    border: white 1px solid;
+    border-radius: 20px;
+    padding: 20px;
+}
+#text {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    user-select: none;
+}
+.textLight {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    user-select: none;
+}
+.textDesc {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    user-select: none;
+}
+#name {
+    font-size: 7vh;
+}
+#desc {
+    font-size: 5vh;
+}
+#ach {
+    font-size: 4.5vh;
+}
+#forms {
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+}
+#phpControls {
+    display: grid;
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70%;
+    width: 90%;
+    border: white 1px solid;
+    border-radius: 20px;
+}
+
+/* <-- Animations --> */
+.floating {
+    animation: floating 3s ease-in-out infinite;
+}
+.flashing {
+    animation :flashing 3s ease-in-out infinite;
+}
+@keyframes floating {
+    50% { transform: translateY(15px); }
+    100% { transform: translateY(0); }
+}
+@keyframes flashing {
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
